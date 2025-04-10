@@ -1,0 +1,565 @@
+
+*** Running vivado
+    with args -log fetch_and_control_unit.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source fetch_and_control_unit.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source fetch_and_control_unit.tcl -notrace
+Command: synth_design -top fetch_and_control_unit -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11388 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 687.656 ; gain = 238.738
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'fetch_and_control_unit' [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/fetch_and_control_unit.sv:7]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter FIF0_DEPTH bound to: 16 - type: integer 
+	Parameter MATRIX_WIDTH bound to: 4 - type: integer 
+	Parameter MAX_OPERATIONS bound to: 7 - type: integer 
+	Parameter MATRIX_HEIGHT bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'fifo' [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/fifo.sv:2]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter FIF0_DEPTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fifo' (1#1) [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/fifo.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'data_extractor_mat_A' [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_A.sv:2]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter FIF0_DEPTH bound to: 16 - type: integer 
+	Parameter MATRIX_WIDTH bound to: 4 - type: integer 
+	Parameter MATRIX_HEIGHT bound to: 4 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element up_counter_reg was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_A.sv:35]
+WARNING: [Synth 8-6014] Unused sequential element west_port_array_reg[31] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_A.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element west_port_array_reg[30] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_A.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element west_port_array_reg[29] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_A.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element west_port_array_reg[28] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_A.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element west_port_array_reg[27] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_A.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element west_port_array_reg[26] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_A.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element west_port_array_reg[25] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_A.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element west_port_array_reg[24] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_A.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element west_port_array_reg[23] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_A.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element west_port_array_reg[22] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_A.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element west_port_array_reg[21] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_A.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element west_port_array_reg[20] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_A.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element west_port_array_reg[19] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_A.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element west_port_array_reg[18] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_A.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element west_port_array_reg[17] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_A.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element west_port_array_reg[16] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_A.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element west_port_array_reg[15] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_A.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element west_port_array_reg[14] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_A.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element west_port_array_reg[13] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_A.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element west_port_array_reg[12] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_A.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element west_port_array_reg[11] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_A.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element west_port_array_reg[10] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_A.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element west_port_array_reg[9] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_A.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element west_port_array_reg[8] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_A.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element west_port_array_reg[7] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_A.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element west_port_array_reg[6] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_A.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element west_port_array_reg[5] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_A.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element west_port_array_reg[4] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_A.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element intmd_counter_reg was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_A.sv:40]
+INFO: [Synth 8-6155] done synthesizing module 'data_extractor_mat_A' (2#1) [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_A.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'data_extractor_mat_B' [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_B.sv:2]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter FIF0_DEPTH bound to: 16 - type: integer 
+	Parameter MATRIX_HEIGHT bound to: 4 - type: integer 
+	Parameter MATRIX_WIDTH bound to: 4 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element up_counter_reg was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_B.sv:35]
+WARNING: [Synth 8-6014] Unused sequential element north_port_array_reg[31] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_B.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element north_port_array_reg[30] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_B.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element north_port_array_reg[29] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_B.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element north_port_array_reg[28] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_B.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element north_port_array_reg[27] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_B.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element north_port_array_reg[26] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_B.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element north_port_array_reg[25] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_B.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element north_port_array_reg[24] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_B.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element north_port_array_reg[23] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_B.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element north_port_array_reg[22] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_B.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element north_port_array_reg[21] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_B.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element north_port_array_reg[20] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_B.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element north_port_array_reg[19] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_B.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element north_port_array_reg[18] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_B.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element north_port_array_reg[17] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_B.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element north_port_array_reg[16] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_B.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element north_port_array_reg[15] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_B.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element north_port_array_reg[14] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_B.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element north_port_array_reg[13] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_B.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element north_port_array_reg[12] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_B.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element north_port_array_reg[11] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_B.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element north_port_array_reg[10] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_B.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element north_port_array_reg[9] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_B.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element north_port_array_reg[8] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_B.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element north_port_array_reg[7] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_B.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element north_port_array_reg[6] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_B.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element north_port_array_reg[5] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_B.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element north_port_array_reg[4] was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_B.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element intmd_counter_reg was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_B.sv:40]
+INFO: [Synth 8-6155] done synthesizing module 'data_extractor_mat_B' (3#1) [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_B.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'systolic_array' [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/systolic_array.sv:326]
+INFO: [Synth 8-6157] synthesizing module 'block' [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/block.sv:2]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-4471] merging register 'output_east_reg[31:0]' into 'output_south_reg[31:0]' [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/block.sv:22]
+WARNING: [Synth 8-6014] Unused sequential element output_east_reg was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/block.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'block' (4#1) [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/block.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'systolic_array' (5#1) [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/systolic_array.sv:326]
+WARNING: [Synth 8-6014] Unused sequential element current_state_reg was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/fetch_and_control_unit.sv:212]
+WARNING: [Synth 8-6014] Unused sequential element next_state_reg was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/fetch_and_control_unit.sv:219]
+WARNING: [Synth 8-6014] Unused sequential element current_state_reg was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/fetch_and_control_unit.sv:247]
+WARNING: [Synth 8-6014] Unused sequential element completion_counter_reg was removed.  [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/fetch_and_control_unit.sv:248]
+WARNING: [Synth 8-3848] Net data_out in module/entity fetch_and_control_unit does not have driver. [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/fetch_and_control_unit.sv:20]
+WARNING: [Synth 8-3848] Net data_valid in module/entity fetch_and_control_unit does not have driver. [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/fetch_and_control_unit.sv:21]
+INFO: [Synth 8-6155] done synthesizing module 'fetch_and_control_unit' (6#1) [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/fetch_and_control_unit.sv:7]
+WARNING: [Synth 8-3331] design block has unconnected port input_north[31]
+WARNING: [Synth 8-3331] design block has unconnected port input_north[30]
+WARNING: [Synth 8-3331] design block has unconnected port input_north[29]
+WARNING: [Synth 8-3331] design block has unconnected port input_north[28]
+WARNING: [Synth 8-3331] design block has unconnected port input_north[27]
+WARNING: [Synth 8-3331] design block has unconnected port input_north[26]
+WARNING: [Synth 8-3331] design block has unconnected port input_north[25]
+WARNING: [Synth 8-3331] design block has unconnected port input_north[24]
+WARNING: [Synth 8-3331] design block has unconnected port input_north[23]
+WARNING: [Synth 8-3331] design block has unconnected port input_north[22]
+WARNING: [Synth 8-3331] design block has unconnected port input_north[21]
+WARNING: [Synth 8-3331] design block has unconnected port input_north[20]
+WARNING: [Synth 8-3331] design block has unconnected port input_north[19]
+WARNING: [Synth 8-3331] design block has unconnected port input_north[18]
+WARNING: [Synth 8-3331] design block has unconnected port input_north[17]
+WARNING: [Synth 8-3331] design block has unconnected port input_north[16]
+WARNING: [Synth 8-3331] design block has unconnected port input_north[15]
+WARNING: [Synth 8-3331] design block has unconnected port input_north[14]
+WARNING: [Synth 8-3331] design block has unconnected port input_north[13]
+WARNING: [Synth 8-3331] design block has unconnected port input_north[12]
+WARNING: [Synth 8-3331] design block has unconnected port input_north[11]
+WARNING: [Synth 8-3331] design block has unconnected port input_north[10]
+WARNING: [Synth 8-3331] design block has unconnected port input_north[9]
+WARNING: [Synth 8-3331] design block has unconnected port input_north[8]
+WARNING: [Synth 8-3331] design block has unconnected port input_north[7]
+WARNING: [Synth 8-3331] design block has unconnected port input_north[6]
+WARNING: [Synth 8-3331] design block has unconnected port input_north[5]
+WARNING: [Synth 8-3331] design block has unconnected port input_north[4]
+WARNING: [Synth 8-3331] design block has unconnected port input_north[3]
+WARNING: [Synth 8-3331] design block has unconnected port input_north[2]
+WARNING: [Synth 8-3331] design block has unconnected port input_north[1]
+WARNING: [Synth 8-3331] design block has unconnected port input_north[0]
+WARNING: [Synth 8-3331] design block has unconnected port input_west[31]
+WARNING: [Synth 8-3331] design block has unconnected port input_west[30]
+WARNING: [Synth 8-3331] design block has unconnected port input_west[29]
+WARNING: [Synth 8-3331] design block has unconnected port input_west[28]
+WARNING: [Synth 8-3331] design block has unconnected port input_west[27]
+WARNING: [Synth 8-3331] design block has unconnected port input_west[26]
+WARNING: [Synth 8-3331] design block has unconnected port input_west[25]
+WARNING: [Synth 8-3331] design block has unconnected port input_west[24]
+WARNING: [Synth 8-3331] design block has unconnected port input_west[23]
+WARNING: [Synth 8-3331] design block has unconnected port input_west[22]
+WARNING: [Synth 8-3331] design block has unconnected port input_west[21]
+WARNING: [Synth 8-3331] design block has unconnected port input_west[20]
+WARNING: [Synth 8-3331] design block has unconnected port input_west[19]
+WARNING: [Synth 8-3331] design block has unconnected port input_west[18]
+WARNING: [Synth 8-3331] design block has unconnected port input_west[17]
+WARNING: [Synth 8-3331] design block has unconnected port input_west[16]
+WARNING: [Synth 8-3331] design block has unconnected port input_west[15]
+WARNING: [Synth 8-3331] design block has unconnected port input_west[14]
+WARNING: [Synth 8-3331] design block has unconnected port input_west[13]
+WARNING: [Synth 8-3331] design block has unconnected port input_west[12]
+WARNING: [Synth 8-3331] design block has unconnected port input_west[11]
+WARNING: [Synth 8-3331] design block has unconnected port input_west[10]
+WARNING: [Synth 8-3331] design block has unconnected port input_west[9]
+WARNING: [Synth 8-3331] design block has unconnected port input_west[8]
+WARNING: [Synth 8-3331] design block has unconnected port input_west[7]
+WARNING: [Synth 8-3331] design block has unconnected port input_west[6]
+WARNING: [Synth 8-3331] design block has unconnected port input_west[5]
+WARNING: [Synth 8-3331] design block has unconnected port input_west[4]
+WARNING: [Synth 8-3331] design block has unconnected port input_west[3]
+WARNING: [Synth 8-3331] design block has unconnected port input_west[2]
+WARNING: [Synth 8-3331] design block has unconnected port input_west[1]
+WARNING: [Synth 8-3331] design block has unconnected port input_west[0]
+WARNING: [Synth 8-3331] design block has unconnected port clk
+WARNING: [Synth 8-3331] design block has unconnected port valid
+WARNING: [Synth 8-3331] design data_extractor_mat_B has unconnected port data_in[31]
+WARNING: [Synth 8-3331] design data_extractor_mat_B has unconnected port data_in[30]
+WARNING: [Synth 8-3331] design data_extractor_mat_B has unconnected port data_in[29]
+WARNING: [Synth 8-3331] design data_extractor_mat_B has unconnected port data_in[28]
+WARNING: [Synth 8-3331] design data_extractor_mat_B has unconnected port data_in[27]
+WARNING: [Synth 8-3331] design data_extractor_mat_B has unconnected port data_in[26]
+WARNING: [Synth 8-3331] design data_extractor_mat_B has unconnected port data_in[25]
+WARNING: [Synth 8-3331] design data_extractor_mat_B has unconnected port data_in[24]
+WARNING: [Synth 8-3331] design data_extractor_mat_B has unconnected port data_in[23]
+WARNING: [Synth 8-3331] design data_extractor_mat_B has unconnected port data_in[22]
+WARNING: [Synth 8-3331] design data_extractor_mat_B has unconnected port data_in[21]
+WARNING: [Synth 8-3331] design data_extractor_mat_B has unconnected port data_in[20]
+WARNING: [Synth 8-3331] design data_extractor_mat_B has unconnected port data_in[19]
+WARNING: [Synth 8-3331] design data_extractor_mat_B has unconnected port data_in[18]
+WARNING: [Synth 8-3331] design data_extractor_mat_B has unconnected port data_in[17]
+WARNING: [Synth 8-3331] design data_extractor_mat_B has unconnected port data_in[16]
+WARNING: [Synth 8-3331] design data_extractor_mat_B has unconnected port data_in[15]
+WARNING: [Synth 8-3331] design data_extractor_mat_B has unconnected port data_in[14]
+WARNING: [Synth 8-3331] design data_extractor_mat_B has unconnected port data_in[13]
+WARNING: [Synth 8-3331] design data_extractor_mat_B has unconnected port data_in[12]
+WARNING: [Synth 8-3331] design data_extractor_mat_B has unconnected port data_in[11]
+WARNING: [Synth 8-3331] design data_extractor_mat_B has unconnected port data_in[10]
+WARNING: [Synth 8-3331] design data_extractor_mat_B has unconnected port data_in[9]
+WARNING: [Synth 8-3331] design data_extractor_mat_B has unconnected port data_in[8]
+WARNING: [Synth 8-3331] design data_extractor_mat_B has unconnected port data_in[7]
+WARNING: [Synth 8-3331] design data_extractor_mat_B has unconnected port data_in[6]
+WARNING: [Synth 8-3331] design data_extractor_mat_B has unconnected port data_in[5]
+WARNING: [Synth 8-3331] design data_extractor_mat_B has unconnected port data_in[4]
+WARNING: [Synth 8-3331] design data_extractor_mat_A has unconnected port data_in[31]
+WARNING: [Synth 8-3331] design data_extractor_mat_A has unconnected port data_in[30]
+WARNING: [Synth 8-3331] design data_extractor_mat_A has unconnected port data_in[29]
+WARNING: [Synth 8-3331] design data_extractor_mat_A has unconnected port data_in[28]
+WARNING: [Synth 8-3331] design data_extractor_mat_A has unconnected port data_in[27]
+WARNING: [Synth 8-3331] design data_extractor_mat_A has unconnected port data_in[26]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 760.117 ; gain = 311.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 760.117 ; gain = 311.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 760.117 ; gain = 311.199
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+WARNING: [Synth 8-327] inferring latch for variable 'fifo_operation_reg' [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_A.sv:82]
+WARNING: [Synth 8-327] inferring latch for variable 'fifo_operation_reg' [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_B.sv:82]
+WARNING: [Synth 8-327] inferring latch for variable 'data_in_a_reg' [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/fetch_and_control_unit.sv:80]
+WARNING: [Synth 8-327] inferring latch for variable 'operation_a_reg' [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/fetch_and_control_unit.sv:81]
+WARNING: [Synth 8-327] inferring latch for variable 'data_in_b_reg' [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/fetch_and_control_unit.sv:100]
+WARNING: [Synth 8-327] inferring latch for variable 'operation_b_reg' [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/fetch_and_control_unit.sv:101]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 760.117 ; gain = 311.199
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 9     
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 4     
++---Registers : 
+	               64 Bit    Registers := 16    
+	               32 Bit    Registers := 50    
+	                4 Bit    Registers := 17    
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 45    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module fifo 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 17    
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 16    
+Module data_extractor_mat_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 6     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 6     
+Module data_extractor_mat_B 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 6     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 6     
+Module block 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+Module systolic_array 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'data_extractor_mat_A_01/counter_reg[1:0]' into 'data_extractor_mat_A_01/counter_reg[1:0]' [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_A.sv:33]
+INFO: [Synth 8-4471] merging register 'data_extractor_mat_B_01/counter_reg[1:0]' into 'data_extractor_mat_B_01/counter_reg[1:0]' [D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_B.sv:33]
+WARNING: [Synth 8-3332] Sequential element (data_extractor_mat_A_01/fifo_operation_reg) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_extractor_mat_B_01/fifo_operation_reg) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_a_reg[31]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_a_reg[30]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_a_reg[29]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_a_reg[28]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_a_reg[27]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_a_reg[26]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_a_reg[25]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_a_reg[24]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_a_reg[23]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_a_reg[22]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_a_reg[21]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_a_reg[20]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_a_reg[19]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_a_reg[18]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_a_reg[17]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_a_reg[16]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_a_reg[15]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_a_reg[14]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_a_reg[13]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_a_reg[12]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_a_reg[11]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_a_reg[10]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_a_reg[9]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_a_reg[8]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_a_reg[7]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_a_reg[6]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_a_reg[5]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_a_reg[4]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_a_reg[3]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_a_reg[2]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_a_reg[1]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_a_reg[0]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_b_reg[31]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_b_reg[30]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_b_reg[29]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_b_reg[28]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_b_reg[27]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_b_reg[26]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_b_reg[25]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_b_reg[24]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_b_reg[23]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_b_reg[22]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_b_reg[21]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_b_reg[20]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_b_reg[19]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_b_reg[18]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_b_reg[17]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_b_reg[16]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_b_reg[15]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_b_reg[14]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_b_reg[13]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_b_reg[12]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_b_reg[11]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_b_reg[10]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_b_reg[9]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_b_reg[8]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_b_reg[7]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_b_reg[6]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_b_reg[5]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_b_reg[4]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_b_reg[3]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_b_reg[2]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_b_reg[1]) is unused and will be removed from module fetch_and_control_unit.
+WARNING: [Synth 8-3332] Sequential element (data_in_b_reg[0]) is unused and will be removed from module fetch_and_control_unit.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 939.348 ; gain = 490.430
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 943.012 ; gain = 494.094
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 943.012 ; gain = 494.094
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 943.012 ; gain = 494.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 943.012 ; gain = 494.094
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 943.012 ; gain = 494.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 943.012 ; gain = 494.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 943.012 ; gain = 494.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 943.012 ; gain = 494.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |BUFG  |     2|
+|2     |LUT1  |     3|
+|3     |LUT2  |     2|
+|4     |LUT3  |     2|
+|5     |LUT4  |     4|
+|6     |LUT6  |     2|
+|7     |FDRE  |     8|
+|8     |LD    |     2|
+|9     |IBUF  |     5|
+|10    |OBUF  |     2|
+|11    |OBUFT |    65|
++------+------+------+
+
+Report Instance Areas: 
++------+-------------+-------+------+
+|      |Instance     |Module |Cells |
++------+-------------+-------+------+
+|1     |top          |       |    97|
+|2     |  fifo_mat_a |fifo   |    10|
+|3     |  fifo_mat_b |fifo_0 |    10|
++------+-------------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 943.012 ; gain = 494.094
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 391 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 943.012 ; gain = 494.094
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 943.012 ; gain = 494.094
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 955.211 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1059.582 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  LD => LDCE: 1 instance 
+  LD => LDCE (inverted pins: G): 1 instance 
+
+INFO: [Common 17-83] Releasing license: Synthesis
+25 Infos, 239 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 1059.582 ; gain = 635.547
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1059.582 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/MOODLE/SEMESTER 7/EN4020_Advanced_Digital_Systems/SoC_Project/SoC_project_2/SoC_project_2.runs/synth_1/fetch_and_control_unit.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file fetch_and_control_unit_utilization_synth.rpt -pb fetch_and_control_unit_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Nov  5 13:18:30 2023...

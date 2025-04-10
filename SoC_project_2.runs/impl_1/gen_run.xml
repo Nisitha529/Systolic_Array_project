@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1699170520">
+  <File Type="BITSTR-BMM" Name="fetch_and_control_unit_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="fetch_and_control_unit_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="fetch_and_control_unit_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="fetch_and_control_unit_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="fetch_and_control_unit.tcl"/>
+  <File Type="OPT-TIMING" Name="fetch_and_control_unit_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="fetch_and_control_unit_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="fetch_and_control_unit_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="fetch_and_control_unit_reports.tcl"/>
+  <File Type="OPT-DRC" Name="fetch_and_control_unit_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="fetch_and_control_unit.hwdef"/>
+  <File Type="PWROPT-DCP" Name="fetch_and_control_unit_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="fetch_and_control_unit_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="fetch_and_control_unit_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="fetch_and_control_unit_placed.dcp"/>
+  <File Type="PLACE-IO" Name="fetch_and_control_unit_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="fetch_and_control_unit_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="fetch_and_control_unit_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="fetch_and_control_unit_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="fetch_and_control_unit_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="fetch_and_control_unit_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="fetch_and_control_unit_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="fetch_and_control_unit_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="fetch_and_control_unit_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="fetch_and_control_unit.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="fetch_and_control_unit_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="fetch_and_control_unit_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="fetch_and_control_unit_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="fetch_and_control_unit.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="fetch_and_control_unit_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="fetch_and_control_unit_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="fetch_and_control_unit_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="fetch_and_control_unit_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="fetch_and_control_unit_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="fetch_and_control_unit_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="fetch_and_control_unit_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="fetch_and_control_unit.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="fetch_and_control_unit_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="fetch_and_control_unit_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="fetch_and_control_unit_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="fetch_and_control_unit_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="fetch_and_control_unit_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="fetch_and_control_unit_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="fetch_and_control_unit_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="fetch_and_control_unit_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="fetch_and_control_unit_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="fetch_and_control_unit_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="fetch_and_control_unit_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="fetch_and_control_unit_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="fetch_and_control_unit_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="fetch_and_control_unit_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="fetch_and_control_unit_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="fetch_and_control_unit_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="fetch_and_control_unit_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="fetch_and_control_unit_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="fetch_and_control_unit_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="fetch_and_control_unit_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="fetch_and_control_unit_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="fetch_and_control_unit.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="fetch_and_control_unit_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="fetch_and_control_unit.rbt"/>
+  <File Type="BITSTR-NKY" Name="fetch_and_control_unit.nky"/>
+  <File Type="PDI-FILE" Name="fetch_and_control_unit.pdi"/>
+  <File Type="RCFI_FILE" Name="fetch_and_control_unit.rcfi"/>
+  <File Type="CFI_FILE" Name="fetch_and_control_unit.cfi"/>
+  <File Type="RNPI_FILE" Name="fetch_and_control_unit.rnpi"/>
+  <File Type="NPI_FILE" Name="fetch_and_control_unit.npi"/>
+  <File Type="RBD_FILE" Name="fetch_and_control_unit.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="fetch_and_control_unit.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="fetch_and_control_unit.sysdef"/>
+  <File Type="BG-BGN" Name="fetch_and_control_unit.bgn"/>
+  <File Type="BG-DRC" Name="fetch_and_control_unit.drc"/>
+  <File Type="RDI-RDI" Name="fetch_and_control_unit.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/SoC_Project/block.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../block.sv"/>
+        <Attr Name="ImportTime" Val="1699168522"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SoC_Project/data_extractor_mat_A.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SoC_project_design/SoC_project_design.srcs/sources_1/imports/SoC_Project/data_extractor_mat_A.sv"/>
+        <Attr Name="ImportTime" Val="1699166855"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SoC_Project/data_extractor_mat_B.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SoC_project_design/SoC_project_design.srcs/sources_1/imports/SoC_Project/data_extractor_mat_B.sv"/>
+        <Attr Name="ImportTime" Val="1699165888"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SoC_Project/fifo.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SoC_project_design/SoC_project_design.srcs/sources_1/imports/SoC_Project/fifo.sv"/>
+        <Attr Name="ImportTime" Val="1699166845"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SoC_Project/systolic_array.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SoC_project_design/SoC_project_design.srcs/sources_1/imports/SoC_Project/systolic_array.sv"/>
+        <Attr Name="ImportTime" Val="1699167930"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SoC_Project/fetch_and_control_unit.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SoC_project_design/SoC_project_design.srcs/sources_1/imports/SoC_Project/fetch_and_control_unit.sv"/>
+        <Attr Name="ImportTime" Val="1699165818"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="fetch_and_control_unit"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design" EnableStepBool="1"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../SoC_project_2.srcs/sources_1/imports/SoC_Project/block.sv" \
+"../../../../SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_A.sv" \
+"../../../../SoC_project_2.srcs/sources_1/imports/SoC_Project/data_extractor_mat_B.sv" \
+"../../../../SoC_project_2.srcs/sources_1/imports/SoC_Project/fetch_and_control_unit.sv" \
+"../../../../SoC_project_2.srcs/sources_1/imports/SoC_Project/fifo.sv" \
+"../../../../SoC_project_2.srcs/sources_1/imports/SoC_Project/systolic_array.sv" \
+"../../../../SoC_project_2.srcs/sim_1/imports/SoC_Project/tb_fetch_and_control_unit.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
